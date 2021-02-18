@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		/>
+		<!-- custom css -->
+		<link rel="stylesheet" href="main.css" />
+		<title>Galería Dinámica</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="logo">
+					<h1>Galería de imagenes</h1>
+					<p>Fotografía e ilustración</p>
+				</div>
+				<form action="">
+					<input
+						type="text"
+						class="barra-busqueda"
+						id="barra-busqueda"
+						placeholder="Buscar"
+					/>
+				</form>
+				<div class="categorias" id="categorias">
+					<a href="#" class="activo">Todos</a>
+					<a href="#">Naturaleza</a>
+					<a href="#">Ciudades</a>
+					<a href="#">Animales</a>
+					<a href="#">Personas</a>
+				</div>
+			</header>
+
+			<section class="grid" id="grid">
+				<div
+					class="item"
+					data-categoria="ciudades"
+					data-etiquetas="ciudades autos carros calles"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/ciudad1.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="ciudades"
+					data-etiquetas="ciudades autos carros calles edificios"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/ciudad2.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="animales"
+					data-etiquetas="animales leon"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/animal1.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="animales"
+					data-etiquetas="animales panda"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/animal2.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="naturaleza"
+					data-etiquetas="plantas naturaleza hojas"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/naturaleza1.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="paisajes"
+					data-etiquetas="paisajes montañas costa mar"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/paisaje1.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="paisajes"
+					data-etiquetas="paisajes montañas"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/paisaje2.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="personas"
+					data-etiquetas="personas"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/persona1.png" alt="" />
+					</div>
+				</div>
+				<div
+					class="item"
+					data-categoria="personas"
+					data-etiquetas="personas"
+					data-descripcion="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, sunt."
+				>
+					<div class="item-contenido">
+						<img src="img/persona2.png" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section class="overlay" id="overlay">
+				<div class="container-img">
+					<button id="btn-cerrar"><i class="fas fa-times"></i></button>
+					<img src="" alt="" />
+				</div>
+				<p class="descripcion"></p>
+			</section>
+		</div>
+
+		<footer class="contenedor">
+			<div class="copy">
+				<p>Developed And Designed By Agustin R. ©2021. All Rights Reserved.</p>
+			</div>
+		</footer>
+
+		<!-- muuri -->
+		<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+
+		<!-- custom js -->
+		<script src="main.js"></script>
+	</body>
+</html>
