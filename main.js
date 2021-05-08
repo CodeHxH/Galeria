@@ -1,9 +1,11 @@
+// Instancia de Muuri
 const grid = new Muuri('.grid', {
 	layout: {
 		rounding: false,
 	},
 });
 
+// Para que las imagenes aparescan cuando todas estén cargadas.
 window.addEventListener('load', () => {
 	grid.refreshItems().layout();
 	document.getElementById('grid').classList.add('imagenes-cargadas');
