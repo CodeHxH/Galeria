@@ -108,11 +108,13 @@ header .categorias a.activo {
 	width: 100%;
 	cursor: pointer;
 	vertical-align: top;
+	border-radius: 10px;
 }
 
 /* OVERLAY */
 
 .overlay {
+	padding: 20px;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -132,7 +134,9 @@ header .categorias a.activo {
 }
 
 .overlay img {
-	max-width: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
 }
 
 .overlay .descripcion {
@@ -147,6 +151,8 @@ header .categorias a.activo {
 
 .container-img {
 	position: relative;
+	max-width: 600px;
+	width: 100%;
 }
 
 .container-img button {
